@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import img from "./../../assets/images/HeaderBackground.jpg.jpg";
 import { Section } from "./../../global";
+import { keyframes } from "styled-components";
 
 export const HeaderContainer = styled(Section)`
   background-image: linear-gradient(
@@ -15,15 +16,18 @@ export const HeaderContainer = styled(Section)`
 `;
 
 export const HeaderHeroCont = styled.div`
+  width: 75%;
   position: absolute;
   top: 52.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  transition: all 0.5s;
 `;
 
 export const HeaderMainText = styled.h1`
   font-size: 15rem;
+
   color: ${({ theme }) => theme.primaryLight2};
   text-shadow: 0rem 0rem 1rem ${({ theme }) => theme.primaryLight2};
   span {
@@ -38,7 +42,7 @@ export const HeaderSecondaryText = styled.h2`
   font-size: 3rem;
   text-transform: uppercase;
   text-shadow: 0rem 0rem 2rem ${({ theme }) => theme.primaryDark};
-  }
+
   .dot {
     height: 1rem;
     width: 1rem;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-
 import { Link } from "react-scroll";
+
 export const Nav = styled.div`
   background-color: ${({ theme }) => theme.primaryDark};
   height: 80px;
@@ -96,16 +96,16 @@ export const NavItems = styled.li`
   }
 `;
 export const NavLink = styled(Link)`
-  color: ${({ theme }) => theme.primaryLight2};
+  color: ${({ theme }) => theme.primaryGrey};
   padding-bottom: 1rem;
   font-size: 2rem;
-
+  cursor: pointer;
   /* margin-right: 2rem; */
 
   &:hover {
     transition: 0.1s ease;
-    color: ${({ theme }) => theme.primaryLight3};
-    border-bottom: 2px solid #a2d0ac;
+    color: ${({ theme }) => theme.backgroundLight};
+    border-bottom: 2px solid ${({ theme }) => theme.backgroundLight};
   }
   @media screen and(max-width:960px) {
     color: #ffffff;

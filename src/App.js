@@ -5,6 +5,7 @@ import GlobalStyle from "./global";
 import { theme } from "./theme";
 import Navbar from "./components/navbar/Navbar";
 import Header from "./components/section/header.section/Header";
+import About from "./components/section/about/About";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <div className="App">
           <Navbar />
           <Header />
+          <About id="about" />
         </div>
       </>
     </ThemeProvider>
